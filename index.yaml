@@ -1,0 +1,2359 @@
+apiVersion: v1
+entries:
+  certs:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.327683429+01:00"
+    description: A Helm chart for cert issuer.
+    digest: 6ce2e4d5f1f8b8483de375b29a4cced734a8becad3c707aebba90aebf6764aa3
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.327051307+01:00"
+    description: A Helm chart for cert issuer.
+    digest: 6dcd32b8ebac9fd88c745a95e30c89cc1252c8e9ed8a073b7409439a9c0bfa91
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.314204592+01:00"
+    description: A Helm chart for cert issuer.
+    digest: 4dfe7ea4e395ea7850b8a9478cb7624ecd8abe3b0b8b49f27b793cbfc3f2f44d
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.313303227+01:00"
+    description: A Helm chart for cert issuer.
+    digest: 87da86752cddb9c736385d52a1a4ddbded36cbefc5bc4e1bdc3d9425293eff20
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-1.0.0.tgz
+    version: 1.0.0
+  certs-issuers:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.34876464+01:00"
+    description: A Helm chart for cert issuer.
+    digest: e82d6915dc2b51aa6443cff5d8a753eb760803432d3de3d89123e9d5db5dea68
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs-issuers
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-issuers-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.340218265+01:00"
+    description: A Helm chart for cert issuer.
+    digest: a6ef917d2b96784f7a254fb54ed67cd15e59f50145a9567b6d219d446d20289a
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: certs-issuers
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - certs-issuers-1.0.0.tgz
+    version: 1.0.0
+  gitea:
+  - apiVersion: v2
+    appVersion: 1.16.3
+    created: "2022-10-30T10:14:23.449848413+01:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.9.0
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.14.10
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.17
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.3.6
+    description: Gitea Helm chart for Kubernetes
+    digest: 1e60d3ad1a5a805fe5afed973bb4e6a5457e0c4e3424cb7b5fd3ca4337f6270e
+    icon: https://docs.gitea.io/images/gitea.png
+    keywords:
+    - git
+    - issue tracker
+    - code review
+    - wiki
+    - gitea
+    - gogs
+    maintainers:
+    - email: charlie@charliedrage.com
+      name: Charlie Drage
+    - email: maintainers@gitea.io
+      name: Gitea Authors
+    - email: konrad.lother@novum-rgi.de
+      name: Konrad Lother
+    - email: lucas.hahn@novum-rgi.de
+      name: Lucas Hahn
+    - email: sk.bunsenbrenner@gmail.com
+      name: Steven Kriegler
+    name: gitea
+    sources:
+    - https://gitea.com/gitea/helm-chart
+    - https://github.com/go-gitea/gitea
+    - https://hub.docker.com/r/gitea/gitea/
+    type: application
+    urls:
+    - gitea-1.0.0.tgz
+    version: 1.0.0
+  haproxy:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-10-30T10:14:23.45638449+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: a63c3b68ebacd6490f977bde84b0cce3e5fe4fdbc2c6e5cfca25f6633f775427
+    home: https://www.haproxy.org/
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    - robobee
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: haproxy
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://hub.docker.com/_/haproxy
+    - https://github.com/haproxytech/haproxy
+    urls:
+    - haproxy-1.0.10.tgz
+    version: 1.0.10
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-10-30T10:14:23.475253017+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: d8c5c1ac5feb512cc3036bbc6794fd8bc1e18c00cf53bb5ea17030118df56d6c
+    home: https://www.haproxy.org/
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    - robobee
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: haproxy
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://hub.docker.com/_/haproxy
+    - https://github.com/haproxytech/haproxy
+    urls:
+    - haproxy-1.0.9.tgz
+    version: 1.0.9
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-10-30T10:14:23.470097151+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: eb0a8cd3b82a391eabfc71c31276903b66a375fbd8e0328821a240fedaf6442b
+    home: https://www.haproxy.org/
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    - robobee
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: haproxy
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://hub.docker.com/_/haproxy
+    - https://github.com/haproxytech/haproxy
+    urls:
+    - haproxy-1.0.8.tgz
+    version: 1.0.8
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-10-30T10:14:23.462932893+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: 8c87cd13cd4f166edf24c296f17d60d7b4b7a4061939b45ae4b2aa099a0f2683
+    home: https://www.haproxy.org/
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    - robobee
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: haproxy
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://hub.docker.com/_/haproxy
+    - https://github.com/haproxytech/haproxy
+    urls:
+    - haproxy-1.0.7.tgz
+    version: 1.0.7
+  ingress:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.500523012+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart to deploy ingress.
+    digest: bc0065eab944fa1722f27819de00e36c875a2771898618a455310baad29a91b3
+    keywords:
+    - ingress
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: ingress
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - ingress-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-10-30T10:14:23.491276622+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart to deploy ingress.
+    digest: fcffb38231f6ff6a274d965be2cd156841b926335e0bfdbb2e9065a291d7566f
+    keywords:
+    - ingress
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: ingress
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jetstack/cert-manager
+    urls:
+    - ingress-1.0.0.tgz
+    version: 1.0.0
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.332.1
+    created: "2022-10-30T10:14:23.56771121+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: 996b524647a9d1aedd6871eef0e9300b73aca635dc0d2e87ca696832822ce46a
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.332.1
+    created: "2022-10-30T10:14:23.545599062+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: cc59b73a738d5b747239dc6db82a5f8c7ab92aba05426605e7d69e0f628ebd61
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.332.1
+    created: "2022-10-30T10:14:23.517147256+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: 9f6b3b2437ce3e80f0f816dc0b4a316b3a1efb1d91ed1c84e369021051d73dfe
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.319.2
+    created: "2022-10-30T10:14:23.509055401+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: f3c75e7eb556b502254c7707c69019f6e04ac99938e7613ec5fe5cd2ea583f7e
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.319.2
+    created: "2022-10-30T10:14:23.505421467+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: The leading open source automation server
+    digest: 7a59b8c4b2b8966401d21a70e00e38703776cf9c8b28bb9f3914a39f0b7a71b3
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/bitnami-docker-jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-1.0.0.tgz
+    version: 1.0.0
+  k8s-resources-job:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2022-10-30T10:14:23.587411479+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Deploys a Kubernetes Job resource.
+    digest: 494d71ac028532802b3ef4aa51a934785d7dd2796a56424fccd98b60ee6acb1b
+    keywords:
+    - kubernetes
+    - job
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: k8s-resources-job
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://kubernetes.io/docs/concepts/workloads/controllers/job/
+    urls:
+    - k8s-resources-job-1.0.4-snapshot.tgz
+    version: 1.0.4-snapshot
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2022-10-30T10:14:23.578973214+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Deploys a Kubernetes Job resource.
+    digest: dd229502a6b49d4fd0052c57ad64c2458fd350d95d7b66c5bc3d9fd0a4a59e65
+    keywords:
+    - kubernetes
+    - job
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: k8s-resources-job
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://kubernetes.io/docs/concepts/workloads/controllers/job/
+    urls:
+    - k8s-resources-job-1.0.0.tgz
+    version: 1.0.0
+  kes:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.815444467+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: 4117913df8015c465f1f508ce67515203710ece070e69e5540df91fe4a777eb8
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.8.tgz
+    version: 1.0.8
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.792338542+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: 05cbca34b3e876d3ebde30f6d1117b3f0d6db8dd44f35b6ed3aa8286e04bb03d
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.7.tgz
+    version: 1.0.7
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.775464718+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: 08e226aa4d0be0abd6c03c5b532a06d7839cb7d11425841fe6c754bfa863c029
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.5.tgz
+    version: 1.0.5
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.739584622+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: c399d52df06cc04e3d988d443a9fb5c9dda0d606bffa7b0f4300aa346d0c296c
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.720706981+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: 493a7203ccb86936f8457a46c3a3d6710f0dafe43004c094f8f72f765a626fcd
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.688562206+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: 68d80c1b507bd9f7af5e1ca3a250b2d25bc69d96ba384b640911f146250b2d40
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.659586433+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: df3439925db5b33de0c6f8aa41917f4864e294586ac6e775fa527d8e733d80b5
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v0.17.6
+    created: "2022-10-30T10:14:23.615332125+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: KES is a stateless and distributed key-management system for high-performance
+      applications.
+    digest: ad676b052fd17ce35f358b04a670c062dcf175a48889de3e71803dc5cde8407a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    keywords:
+    - minio
+    - kes
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: kes
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/minio/kes
+    urls:
+    - kes-1.0.0.tgz
+    version: 1.0.0
+  matomo:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 4.7.1
+    created: "2022-10-30T10:14:23.879451221+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.x.x
+    description: Matomo is the leading Free/Libre open analytics platform.
+    digest: 0c80eb10e293dabe0ec7c5b8612b90b3df4847624d97294daffc86e8cf787f24
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - web
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: matomo
+    sources:
+    - https://github.com/matomo-org/matomo
+    urls:
+    - matomo-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 4.7.1
+    created: "2022-10-30T10:14:23.841034888+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Matomo is the leading Free/Libre open analytics platform.
+    digest: 8038f9870c9ed497e1022345dc979ff5d54d3d4b7951916dbc672887286733b1
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - web
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: matomo
+    sources:
+    - https://github.com/matomo-org/matomo
+    urls:
+    - matomo-1.0.0.tgz
+    version: 1.0.0
+  nextcloud:
+  - apiVersion: v2
+    appVersion: 23.0.2
+    created: "2022-10-30T10:14:24.112243765+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.7.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 55e5ef2c742df34502e0ca27da590912cbe2d18d62215d6839eafeadb030332f
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:24.081966087+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: e5d2cd7e4b32c86a073cfc91942d14edcc052c41ecb7912c11c2e02cc353768a
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.7.tgz
+    version: 1.0.7
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:24.027086618+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 028ed5dd6d716d19cc82e414bae775dc678662fa8d4f3eb41bfb969f7ebe98c6
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:24.009849075+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: be216e14470d64718c666982741b9a6dc72153ffce447c83593b2615c5df7894
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:23.99333464+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 2523325ce7c1f7a95f595542d84690f4a593b71702296aa25de4eb353ee3f474
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:23.960662601+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 207f1a03fe7dde37d250f4017a475373897287cd8cc80f0fc4afc6e67dbb40f4
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:23.944921635+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 717e2e713a7567bc173a3830f285656065a4516ff834aa292dfbea8cdb45eed5
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:23.928280101+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 75c9d3534edf2587b253afd364dfa4c198c95602dcdd42df58c059fa26227daf
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 22.2.3
+    created: "2022-10-30T10:14:23.91166661+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.13.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.6.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: 0d70479bc7ba67aaad7230c849fa25831b087a5acda262fc8552a17c3b02afc1
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-1.0.0.tgz
+    version: 1.0.0
+  nexus:
+  - apiVersion: v2
+    appVersion: v0.6.0
+    created: "2022-10-30T10:14:24.11364128+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Deployes the Nexus Operator.
+    digest: be32ca3b3a8e22e23bb7c7acc0c5e50eb06da8ac1c29cad7d771ca76555ac3fb
+    keywords:
+    - nexus
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: nexus
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/m88i/nexus-operator
+    urls:
+    - nexus-1.0.0.tgz
+    version: 1.0.0
+  nexus-operator:
+  - apiVersion: v2
+    appVersion: v0.6.0
+    created: "2022-10-30T10:14:24.135129518+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Deployes the Nexus Operator.
+    digest: 6cd21ebb4a89086ceeb90e7d76e74af1402790e5b1e8f36a677b54938f2554a8
+    keywords:
+    - nexus
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: nexus-operator
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/m88i/nexus-operator
+    urls:
+    - nexus-operator-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: v0.6.0
+    created: "2022-10-30T10:14:24.131567644+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Deployes the Nexus Operator.
+    digest: 88881550bc92a451c7a42a8326385cae0d627b7828ebe30e7de5dc3efcb9a178
+    keywords:
+    - nexus
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: nexus-operator
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/m88i/nexus-operator
+    urls:
+    - nexus-operator-1.0.0.tgz
+    version: 1.0.0
+  openldap:
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.3
+    created: "2022-10-30T10:14:24.568507955+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: c32773ef2d876fa5a45b575fa7541752d0d1a30e87e04283866ca4d53aab86ed
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.46048515+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 3178be1c428b66837b9e0edeb921b7e28f8a80b20f23ef70318eeb148a3d8533
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.31.tgz
+    version: 1.0.31
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.453602021+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 9c270f895e80dcc017775271fa9b7953f3a1a64cbf2274e5baf9a8941b339427
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.30.tgz
+    version: 1.0.30
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.437892675+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 0de0195ddb9cc8e27cf0c54b767587ad606d9b6dd5ab6d255590b10b6a9b0671
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.29.tgz
+    version: 1.0.29
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.429474504+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 3acc141ca739519734f903250ab1b9843ea584a193942494068d058407c05e2c
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.28.tgz
+    version: 1.0.28
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.409486397+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: ccaffb1f549feb4f61c03d547c358bd81d694529e59da811aa2d5516d3d69729
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.27.tgz
+    version: 1.0.27
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.401907137+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 1ae0bfea236c520b81daf038d26e493c9a0453da784f001cd8984d54b85c7e2d
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.26.tgz
+    version: 1.0.26
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.394409085+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 52217e022b6b84192f78d7e211841025e08ea8837a18f48c16c149a0098ef5b6
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.25.tgz
+    version: 1.0.25
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.385899215+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: fe1dc4435fbe3620f91f8a54de4efdb066c2fbc4e720cc9d2b754f8c8d5bacee
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.24.tgz
+    version: 1.0.24
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.378986032+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 7f1bc6df9578c6839299b546801ddbe7c69b8a05ca86c9de20cd833dc4c160a7
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.23.tgz
+    version: 1.0.23
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.371025901+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: eb6e1e7c60623475058ec3386d88d5e662fb00b690067ecfe96cfea5c2d329e1
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.22.tgz
+    version: 1.0.22
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.360234299+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 2ddb767205374a4e457e7a77bafe1a715e103a80f204788eb802f5c2aa712102
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.21.tgz
+    version: 1.0.21
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.353606906+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 00ba7d1e265d1fc9b7954dfaf0e9e709923fb807073b1a68ca99cf7f31942a33
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.20.tgz
+    version: 1.0.20
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.319415579+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 632a1c86289d4b904b8306f486ad749d7e0e075f205de342f3e1fd576968a72e
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.19.tgz
+    version: 1.0.19
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.305100378+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 9ad2e8949b9cc8a546366169b915062daa5cb330d30099173ea1c485165c7fa7
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.18.tgz
+    version: 1.0.18
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.297597046+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 725bf451bb77c165a4b9685cece3f1850aaeda1defafdde64b99f5d5089955eb
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.17.tgz
+    version: 1.0.17
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.288895652+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 7fe0b732b2303bc092902c4b1081a1442935cc5e634f1e4b02cd5ebd6ecfd391
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.16.tgz
+    version: 1.0.16
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.281668142+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: 4e917f9805ccb67f2c4ed2edeaf4b9709ddaa3073c367ff2e3b1e74064fdcc3e
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.15.tgz
+    version: 1.0.15
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.273443432+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.3
+    description: Community developed LDAP software
+    digest: cde7708bf031836cf080d67b2be004e31b13ba6ea53077ca54b1ffb337915b64
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.14.tgz
+    version: 1.0.14
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.255182315+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.x
+    description: Community developed LDAP software
+    digest: 0d959d863bfc78153af26057f3ab2ae0e051d9bf8b4128428efbc57f1123a0a7
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.13.tgz
+    version: 1.0.13
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.234001372+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.x
+    description: Community developed LDAP software
+    digest: b136f0050fb322d17a93366895fe7a4306ae31f645c32ea9a8ae676d61f22298
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.12.tgz
+    version: 1.0.12
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.211395586+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: f16b3ea2eeffc4e456690bb56221b671dd7536a1f0ca1ae020f311a4706f8f72
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.11.tgz
+    version: 1.0.11
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.18628295+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 7b28e77a9b0c6e984429dec10cb0a3458a5f59a08b44c9b12ce220bd1014c097
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.10.tgz
+    version: 1.0.10
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.55979666+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 6d93f439ba089542153b449b5fa9de57bc957bf13d98770e402852176303591a
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.9.tgz
+    version: 1.0.9
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.552273694+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 5f4ca51cd893a1eeb83c05aff002834a06321a4503697226bacdb14f9caf77cb
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.8.tgz
+    version: 1.0.8
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.536799083+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 0e8adc766701820782a2eae3002f78ed1317763bb91c522b688fc03716199846
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.7.tgz
+    version: 1.0.7
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.510898682+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: e3951ea6c5b027e522fe6605267aeb1c33ca39dbc51cf1c59e3985e301538b82
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.6.tgz
+    version: 1.0.6
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.479679159+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 5091e2d26f53cf0e52aee4de5195c2e187e5c12f60d6a5081814348e3a4e7623
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.5.tgz
+    version: 1.0.5
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.471847335+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 76d7d20e9319cf9c9834307bcde16a9b6b96fce3658a04239614af899266593d
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.4.tgz
+    version: 1.0.4
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.445814788+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 54e4b0b19f6b3668760ff4f6afa9eb6c7ecae5353b7cb10640bdc95692b4302a
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.33896225+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: c44efb3550cfd018dc8eaa58bd2e8c04853600ba4e9900e49ffbd9c209682983
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.158110321+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 0f161a5265784f99fda7a571d0bf9fc896fbb05ac3dc3211ab6eb763670a95ac
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      category: iam
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2022-10-30T10:14:24.138651311+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Community developed LDAP software
+    digest: 38819e46dbc6044d4a5560c2a80fcc902bb384d8962b49bbb5be1d9afa063e0a
+    home: https://github.com/robobee-repos/helm-charts/
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap
+    sources:
+    - https://github.com/robobee-repos/helm-charts/
+    urls:
+    - openldap-1.0.0.tgz
+    version: 1.0.0
+  openldap-stack-ha:
+  - apiVersion: v2
+    appVersion: 2.4.57
+    created: "2022-10-30T10:14:24.58507608+01:00"
+    dependencies:
+    - condition: ltb-passwd.enabled
+      name: ltb-passwd
+      repository: ""
+      version: 0.1.x
+    - condition: phpldapadmin.enabled
+      name: phpldapadmin
+      repository: ""
+      version: 0.1.x
+    description: Community developed LDAP software
+    digest: e68db09e3a6d1cc39d16c270cb53ca35a8dec4d02afc250393513a58793eada9
+    home: https://www.openldap.org
+    icon: https://raw.githubusercontent.com/jp-gouin/helm-openldap/master/logo.png
+    keywords:
+    - ldap
+    - openldap
+    - iam-stack
+    - high availability
+    maintainers:
+    - email: erwin@muellerpublic.de
+      name: Erwin Müller
+    name: openldap-stack-ha
+    sources:
+    - https://github.com/robobee-repos/helm-charts
+    - https://github.com/jp-gouin/helm-openldap
+    urls:
+    - openldap-stack-ha-1.0.0.tgz
+    version: 1.0.0
+  pgo:
+  - apiVersion: v2
+    appVersion: 5.0.4
+    created: "2022-10-30T10:14:24.60038028+01:00"
+    description: Installer for PGO, the open source Postgres Operator from Crunchy
+      Data
+    digest: edc450610ac38efddeabd32ad7bd1213e7fdb95613ae5067f9d5f1b15b846c21
+    name: pgo
+    type: application
+    urls:
+    - pgo-1.0.0.tgz
+    version: 1.0.0
+  postgrescluster:
+  - apiVersion: v2
+    appVersion: 5.0.4
+    created: "2022-10-30T10:14:24.601231902+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 00c91b84e48205798ef2f13fd922f9818d65bdb114311af071048d2b189546c6
+    name: postgrescluster
+    type: application
+    urls:
+    - postgrescluster-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-10-30T10:14:23.300732499+01:00"
